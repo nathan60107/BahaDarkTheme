@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@types/jquery": "^3.5.30",
+    "@types/tampermonkey": "^5.0.3"
+  }
+}
