@@ -2928,28 +2928,39 @@ ul.socialShareMenu > li:hover {
     background-color: rgba(0, 0, 0, 0.6) !important;
     color: #87dfff !important;
 }
-/* 2026-11 補強：留言打「@」時跳出的留言名單 / 好友名單（tippy） */
-.tippy-box:has(> .tippy-content > .tag-list) {
+/* 2026-11 補強：網站用 tippy 畫的白色彈出框（留言 @ 名單、小屋 GP 贊助巴幣、GP 名單…） */
+.tippy-box[data-theme~="light"] {
     background-color: #2d2d2d !important;
     border: 1px solid rgba(255, 255, 255, 0.3) !important;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7) !important;
     color: #fff !important;
 }
-.tippy-box:has(> .tippy-content > .tag-list) > .tippy-arrow {
+.tippy-box[data-theme~="light"] > .tippy-arrow {
     color: #2d2d2d !important;
 }
-.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="top"] > .tippy-arrow::before {
+.tippy-box[data-theme~="light"][data-placement^="top"] > .tippy-arrow::before {
     border-top-color: #2d2d2d !important;
 }
-.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="bottom"] > .tippy-arrow::before {
+.tippy-box[data-theme~="light"][data-placement^="bottom"] > .tippy-arrow::before {
     border-bottom-color: #2d2d2d !important;
 }
-.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="left"] > .tippy-arrow::before {
+.tippy-box[data-theme~="light"][data-placement^="left"] > .tippy-arrow::before {
     border-left-color: #2d2d2d !important;
 }
-.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="right"] > .tippy-arrow::before {
+.tippy-box[data-theme~="light"][data-placement^="right"] > .tippy-arrow::before {
     border-right-color: #2d2d2d !important;
 }
+/*小屋按 GP 後的「贊助巴幣」金額按鈕*/
+.gp_donate .gp_donate_box a {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #87dfff !important;
+}
+.gp_donate .gp_donate_box a:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-color: #87dfff !important;
+}
+/*留言打「@」時跳出的留言名單 / 好友名單*/
 .tippy-content > .tag-list {
     background-color: transparent !important;
     color: #fff !important;
