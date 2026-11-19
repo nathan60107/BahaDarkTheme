@@ -2822,6 +2822,217 @@ iframe[data-bdt-theme="dark"] {
     background-color: rgba(0, 0, 0, 0.4) !important;
     border-color: rgba(255, 255, 255, 0.4) !important;
 }
+
+/* 2026-11 補強：全站共用的「系統訊息」頁（查無此人、文章不存在…） */
+body > .frame:has(> a > #btn) {
+    background-color: rgba(45, 45, 45, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+body > .frame:has(> a > #btn) p {
+    color: #fff !important;
+}
+body > .frame > a > #btn {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+body > .frame > a > #btn:hover {
+    border: 1px solid #87dfff !important;
+    color: #87dfff !important;
+}
+/* 2026-11 補強：「找不到網頁」頁的標題 */
+.box_gray > h1 {
+    color: #fff !important;
+}
+/* 2026-11 補強：限制級內容的年齡確認頁 */
+.ES-warn1 {
+    background-image: none !important;
+    background-color: rgba(45, 45, 45, 0.9) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+.ES-warn1 p,
+.ES-warn1 cite {
+    color: #fff !important;
+}
+/* 2026-11 補強：新版頂端列搜尋框輸入的文字 */
+input.gsc-input {
+    color: #fff !important;
+}
+/* 2026-11 補強：彈出視窗裡的淺灰色按鈕（還原草稿的「取消」…） */
+.dialogify .btn-box .btn-insert {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+/* 2026-11 補強：編輯器工具列滑鼠移入、點開才會出現的內容 */
+.top-editor__icongroup .editor-button,
+.top-editor__icongroup .dropdown-group {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: #fff !important;
+}
+.top-editor__icongroup .editor-button:hover,
+.top-editor__icongroup .dropdown-group:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+/*下拉選單（字體大小、看板分類…）*/
+ul.js-dropdown-list {
+    background-color: rgba(45, 45, 45, 0.98) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+ul.js-dropdown-list > li,
+ul.js-dropdown-list > li a {
+    color: #fff !important;
+}
+ul.js-dropdown-list > li:hover,
+ul.js-dropdown-list > li.is-active {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: #87dfff !important;
+}
+/*收合起來的更多按鈕、選取文字時的浮動工具列、表情符號、調色盤*/
+.editor-toolbar__outerbox,
+.balloon-editor.editor-tool__box {
+    background-color: rgba(45, 45, 45, 0.98) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+.editor-toolbar__outerbox .editor-icon,
+.balloon-editor .editor-icon,
+.balloon-editor .editor-button {
+    color: #fff !important;
+}
+/*滑鼠移到說明連結時的提示框*/
+.popper-hover {
+    background-color: rgba(45, 45, 45, 0.98) !important;
+    border: 2px solid #249db8 !important;
+    color: #fff !important;
+}
+.cc-description {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: #fff !important;
+}
+/* 2026-11 補強：舊版頂端搜尋框的搜尋建議清單 */
+#rsearch.rsearch {
+    background-color: rgba(45, 45, 45, 0.98) !important;
+    color: #fff !important;
+}
+/* 2026-11 補強：點「分享」才會出現的選單 */
+ul.socialShareMenu,
+ul.socialShareMenu > li {
+    background-color: rgba(45, 45, 45, 0.98) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+ul.socialShareMenu > li:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    color: #87dfff !important;
+}
+/* 2026-11 補強：留言打「@」時跳出的留言名單 / 好友名單（tippy） */
+.tippy-box:has(> .tippy-content > .tag-list) {
+    background-color: #2d2d2d !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7) !important;
+    color: #fff !important;
+}
+.tippy-box:has(> .tippy-content > .tag-list) > .tippy-arrow {
+    color: #2d2d2d !important;
+}
+.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="top"] > .tippy-arrow::before {
+    border-top-color: #2d2d2d !important;
+}
+.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="bottom"] > .tippy-arrow::before {
+    border-bottom-color: #2d2d2d !important;
+}
+.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="left"] > .tippy-arrow::before {
+    border-left-color: #2d2d2d !important;
+}
+.tippy-box:has(> .tippy-content > .tag-list)[data-placement^="right"] > .tippy-arrow::before {
+    border-right-color: #2d2d2d !important;
+}
+.tippy-content > .tag-list {
+    background-color: transparent !important;
+    color: #fff !important;
+    /*捲軸也用深色*/
+    color-scheme: dark;
+}
+.tippy-content > .tag-list h3 {
+    color: rgba(255, 255, 255, 0.7) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.tippy-content > .tag-list a.tag-user,
+.tippy-content > .tag-list .username {
+    color: #fff !important;
+}
+.tippy-content > .tag-list a.tag-user:not(.active):hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+/* 2026-11 補強：第一次留言時跳出的「留言標記功能」等導覽提示框（shepherd） */
+.shepherd-element.shepherd-theme-arrows .shepherd-content {
+    background: #2d2d2d !important;
+    color: #fff !important;
+    filter: drop-shadow(0 1px 6px rgba(0, 0, 0, 0.7)) !important;
+}
+.shepherd-element.shepherd-theme-arrows.shepherd-has-title .shepherd-content header {
+    background: #1f1f1f !important;
+}
+.shepherd-element.shepherd-theme-arrows .shepherd-content header .shepherd-title,
+.shepherd-element.shepherd-theme-arrows .shepherd-content .shepherd-text {
+    color: #fff !important;
+}
+.shepherd-element.shepherd-theme-arrows .shepherd-content header a.shepherd-cancel-link {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.shepherd-element.shepherd-theme-arrows .shepherd-content header a.shepherd-cancel-link:hover {
+    color: #fff !important;
+}
+/*提示框的箭頭（框在下方時箭頭朝上，依此類推）*/
+.shepherd-element.shepherd-theme-arrows.shepherd-element-attached-bottom:is(
+        .shepherd-element-attached-center,
+        .shepherd-element-attached-left.shepherd-target-attached-middle,
+        .shepherd-element-attached-right.shepherd-target-attached-middle,
+        .shepherd-element-attached-left.shepherd-target-attached-top,
+        .shepherd-element-attached-right.shepherd-target-attached-top
+    )
+    .shepherd-content::before {
+    border-top-color: #2d2d2d !important;
+}
+.shepherd-element.shepherd-theme-arrows.shepherd-element-attached-top:is(
+        .shepherd-element-attached-center,
+        .shepherd-element-attached-left.shepherd-target-attached-middle,
+        .shepherd-element-attached-right.shepherd-target-attached-middle,
+        .shepherd-element-attached-left.shepherd-target-attached-bottom,
+        .shepherd-element-attached-right.shepherd-target-attached-bottom
+    )
+    .shepherd-content::before {
+    border-bottom-color: #2d2d2d !important;
+}
+.shepherd-element.shepherd-theme-arrows.shepherd-has-title.shepherd-element-attached-top:is(
+        .shepherd-element-attached-center,
+        .shepherd-element-attached-left.shepherd-target-attached-bottom,
+        .shepherd-element-attached-right.shepherd-target-attached-bottom
+    )
+    .shepherd-content::before {
+    border-bottom-color: #1f1f1f !important;
+}
+.shepherd-element.shepherd-theme-arrows:is(
+        .shepherd-element-attached-right.shepherd-element-attached-middle,
+        .shepherd-element-attached-right.shepherd-target-attached-left
+    )
+    .shepherd-content::before {
+    border-left-color: #2d2d2d !important;
+}
+.shepherd-element.shepherd-theme-arrows:is(
+        .shepherd-element-attached-left.shepherd-element-attached-middle,
+        .shepherd-element-attached-left.shepherd-target-attached-right
+    )
+    .shepherd-content::before {
+    border-right-color: #2d2d2d !important;
+}
+/* 2026-11 補強：NOW! 聊天室頭像的白底 */
+.msg_container .user-headshot {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
 `
 
   /**
@@ -2859,6 +3070,26 @@ iframe[data-bdt-theme="dark"] {
     color: #fff !important;
 }
 .now_chatroom-container .roomtitle a {
+    color: #fff !important;
+}
+/*展開聊天室後的輸入區、@ 提及名單、提示訊息的關閉鈕*/
+.now_chatroom-container .chat_inputarea,
+.now_chatroom-container .msg_mentionlist {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+}
+.now_chatroom-container .textarea-container,
+.now_chatroom-container .system_hint-close {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: #fff !important;
+}
+.chatroom-openbtn,
+.chatroom-openbtn i,
+.now_chatroom-container .message a {
+    color: #87dfff !important;
+}
+.now_chatroom-container .textarea-container .textarea {
     color: #fff !important;
 }
 `
@@ -3027,6 +3258,23 @@ iframe[data-bdt-theme="dark"] {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
+/*===== 滑鼠移入、點開才會出現的內容 =====*/
+/*導覽列按鈕、左側選單標題的提示文字*/
+.main-nav .text-tooltip,
+.sidenav-section__heading .tooltip {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+.sidenav-section__heading .tooltip::after {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+}
+.sidenav-shortcut__btn,
+.sidenav-shortcut__btn .icon-add-shortcut,
+.sidenav-section__setting-text {
+    color: #87dfff !important;
+}
+
 /*右下角回到頂端*/
 .fixed-right .fixed-right__link,
 .fixed-right__link {
@@ -3129,6 +3377,56 @@ ${CSS_NOW_CHAT}
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
+/* 2026-11 補強：搜尋頁的「找全文 / 找標題 / 找作者」下拉選單 */
+#select_field.form-control {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: #fff !important;
+}
+#select_field.form-control option {
+    background-color: #2d2d2d !important;
+    color: #fff !important;
+}
+
+/* 2026-11 補強：滑鼠移入、點開才會出現的內容 */
+/*頂端搜尋框點開的「最近搜尋 / 熱門搜尋」標題、搜尋建議清單*/
+.gcse-suggest-child h3 {
+    color: #fff !important;
+}
+#rsearch.rsearch,
+table.gssb_c,
+table.gssb_c .gssb_e,
+table.gssb_c .gssb_m,
+table.gssb_c td {
+    background-color: rgba(45, 45, 45, 0.98) !important;
+    color: #fff !important;
+}
+table.gssb_c .gssb_i td,
+table.gssb_c tr:hover td {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+/*文章頁右側的「推 / 噓名單」*/
+#msgvotelist {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+/*搜尋頁「選擇子板」選單的項目、文章頁右側發文資訊的欄位名稱*/
+ul.search-dropdown li a:hover {
+    color: #87dfff !important;
+}
+.post-info label {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+/*文章列表下方推薦卡片，滑鼠移入時的標題顏色*/
+a:hover > .card__text {
+    color: #87dfff !important;
+}
+
+/* 2026-11 補強：精華區的目錄路徑 */
+.breadcrumb-item.active {
+    color: #87dfff !important;
+}
+
 /* 2026-11 補強：搜尋頁的搜尋框 */
 .SearchTypeahead-input {
     background-color: rgba(0, 0, 0, 0.4) !important;
@@ -3174,6 +3472,7 @@ ${CSS_NOW_CHAT}
 .side_gray_box h5,
 .side_gray_box h6,
 .postset_item h5,
+.post__template__box h5,
 .post__template a > h4 {
     color: #fff !important;
 }
@@ -3263,6 +3562,50 @@ ${CSS_MAIN_NAV}
 }
 .index-fuli__tag {
     color: #87dfff !important;
+}
+/*===== 滑鼠移入、點開才會出現的內容 =====*/
+/*滑鼠移到卡片上時，文字區塊會變成白底*/
+.index-card__content {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+/*GNN 新聞的「篩選」視窗*/
+.filter-section {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border: 2px solid #249db8 !important;
+    color: #fff !important;
+}
+.index-filter-item-label {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+.index-filter-item-label:hover,
+input:checked + .index-filter-item-label {
+    border-color: #87dfff !important;
+    color: #87dfff !important;
+}
+.form-check__check {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+input:checked + .form-check__check,
+input:checked ~ .form-check__check {
+    background-color: #249db8 !important;
+}
+/*資料載入中的灰色預留框*/
+.loading__title,
+.loading__label {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+/*「顯示更多」按鈕*/
+.btn.btn-outline {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border-color: #87dfff !important;
+    color: #87dfff !important;
+}
+/*藍綠色底的「勇者福利社」標題，滑鼠移入時文字維持白色*/
+.index-fuli__head.text__link:hover {
+    color: #fff !important;
 }
 /*用 mask 畫的灰色小圖示（人氣、訂閱數…），已按讚的愛心維持原本的顏色*/
 .info__icon:not(.is-active),
@@ -3935,6 +4278,35 @@ body > .box_gray {
 .gamecard-img {
     background-color: rgba(0, 0, 0, 0.4) !important;
 }
+/*舊版排版的表格（會員中心…），滑鼠移到列上時會變成淺灰色*/
+.BH-lbox table.BH-table tr:hover {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+/*點「回覆」才出現的留言輸入框、圖片預覽*/
+.reply-input textarea,
+.reply-review-img {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+/*滑鼠移到連結上時，網站預設會變成深藍綠色*/
+a:not([class]):hover,
+a.BH-talkman:hover,
+ul.BH-menuE li.dropList > a:hover i {
+    color: #87dfff !important;
+}
+/*創作者後台的表格標題列*/
+.member-list th {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+/*小屋通知列表的頭像底色*/
+.list-item-box .list-item-img {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+/*ACG 資料庫作品介紹下方的「近期編輯」*/
+.wikiContent td {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
 `,
   }
 
@@ -3994,6 +4366,42 @@ body > .box_gray {
 }
 .promotenews-content .title {
     color: #fff !important;
+}
+/*文章下方的商城商品*/
+.ec-slider-list .scroll-card > a {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.ec-slider-list .scroll-card > a:hover {
+    border: 1px solid #87dfff !important;
+}
+.product-info p {
+    color: #fff !important;
+}
+/*圖片說明文字*/
+figure.pic-desc,
+figure.pic-desc b {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+/*文章下方「留言 / 分享」滑鼠移入時的顏色*/
+.article-footer_right-btn:hover p,
+.sharebtn-container_collapse-share:hover p {
+    color: #87dfff !important;
+}
+.ec-slider-list .products-price,
+.ec-slider-list .calltobuy,
+.ec-slider-list .calltobuy i {
+    color: #87dfff !important;
+}
+.ec-slider-list .calltobuy {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+/*文章內圖片輪播的左右箭頭*/
+.header-banner .slick-arrow {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.header-banner .slick-arrow > div {
+    background-color: rgba(255, 255, 255, 0.8) !important;
 }
 `,
     // 巴哈商城
@@ -4073,6 +4481,51 @@ body > .box_gray {
     background-color: rgba(0, 0, 0, 0.4) !important;
     color: #fff !important;
 }
+/*常見問題*/
+.shopping-qa-container {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.section-qa .title-info {
+    background-color: rgba(17, 126, 150, 0.6) !important;
+}
+.menu-content .menu-title {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.menu-content .menu-title:hover {
+    color: #87dfff !important;
+}
+.menu-content .menu-answer {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.btn-custom-service {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: #87dfff !important;
+}
+/*滑鼠移到分類選單時展開的子選單、購物車視窗、回到頂端按鈕*/
+ul.menu_second,
+.popup-shopping-card-area {
+    background-color: rgba(45, 45, 45, 0.98) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+ul.menu_second a {
+    color: #fff !important;
+}
+ul.menu_second a:hover {
+    color: #87dfff !important;
+}
+#btn-go-top {
+    background-color: rgba(45, 45, 45, 0.8) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+/*我的訂單*/
+.myorder-orderchoice-area .btn-tab-box {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
 `,
     // 勇者造型
     avatar1: `
@@ -4090,6 +4543,9 @@ body > .box_gray {
 .AR-myar1 button:hover,
 .AR-array span > a:hover {
     border: 1px solid #87dfff !important;
+    color: #87dfff !important;
+}
+a.BH-talkman {
     color: #87dfff !important;
 }
 `,
@@ -4116,6 +4572,17 @@ body > .box_gray {
 }
 .project-item p {
     color: #fff !important;
+}
+/*商品頁*/
+.fuli-pbox h1 {
+    color: #fff !important;
+}
+.fuli-pbox .pbox-title h3 {
+    color: #87dfff !important;
+}
+.pbox-btn .btn-base.is-disable {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
 }
 `,
     // 站內信
@@ -4151,6 +4618,16 @@ body > .box_gray {
 }
 .ML-tb1 tr.mail-new {
     background-color: rgba(17, 170, 193, 0.2) !important;
+}
+/*滑鼠移到信件上時整列會變白、點開信件後展開的內容*/
+.ML-tb1 tr:hover,
+.ML-tb1 tr[id^="ex_"],
+.ML-tb1 td.OpenMailTd {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: #fff !important;
+}
+.fa-btn.is-disabled span {
+    color: rgba(255, 255, 255, 0.5) !important;
 }
 `,
     // NOW! 網頁版聊天室
@@ -4266,6 +4743,11 @@ a[href] {
 }
 .anime_search-icon {
     background-color: rgba(0, 0, 0, 0) !important;
+}
+/*輸入框的提示文字（請輸入動畫名稱…）原本是深灰色*/
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
 }
 .mainmenu a:hover {
     color: #87dfff !important;
@@ -4386,6 +4868,227 @@ section.data,
 .footer-separate-line {
     background-color: rgba(255, 255, 255, 0.2) !important;
 }
+/*觀看紀錄的卡片、動畫派對的說明*/
+.user-watch-list .anime-card,
+section.desc .content-block {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.user-watch-list .anime-card:hover {
+    border: 1px solid #87dfff !important;
+}
+/*影片頁留言板的留言數*/
+#w-anime-comment-count {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+/*首頁「本季新番」的時間軸*/
+.newanime-date-area::after {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+.date-block-border,
+.pic-continue {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+/*===== 滑鼠移入、點開才會出現的內容 =====*/
+/*排序選單的項目（依更新日排列 / 建議排序…）*/
+.filter-items li:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: #87dfff !important;
+}
+/*搜尋框點開的「最近搜尋 / 熱門搜尋」*/
+.anime_search-content {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border: 2px solid #249db8 !important;
+}
+.anime_search-content .search-tag,
+.delete-record-btn {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: #fff !important;
+}
+.anime_search-content .search-tag:hover,
+.delete-record-btn:hover {
+    color: #87dfff !important;
+}
+/*選單「APP」的下載視窗（QR code 要白底才掃得到）*/
+.app-download-toolbox {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border: 2px solid #249db8 !important;
+}
+.app-download-toolbox .qr-code {
+    background-color: #fff !important;
+    border-radius: 6px;
+}
+.app-download-toolbox .store-row a {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+/*橘色的「付費方案」、藍色的「下一集」按鈕，滑鼠移入時文字維持白色*/
+.mainmenu .menu-payment a:hover,
+.btn-next:hover,
+.btn-next:hover p,
+.btn-next:hover span {
+    color: #fff !important;
+}
+/*影片頁右側彈幕列表的項目*/
+.sub_list .sub-list-li:hover {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+/*留言的回覆輸入框、彈幕關鍵字過濾的輸入框*/
+.reply-input textarea,
+.reply-review-img,
+.ani-input {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+.img-bg-blur-bg.loading {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+/*觀看紀錄卡片上的圓形按鈕（播放、下一集、刪除…），滑鼠移入時會變白底*/
+.anime-card .round-btn:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.anime-card .round-btn:hover i {
+    color: #87dfff !important;
+}
+/*頁碼：目前頁、滑鼠移入時是藍底，文字維持白色*/
+.page_number a:hover,
+.page_number a.is-active,
+.page_number a.active {
+    color: #fff !important;
+}
+/*付費方案卡片的分隔線*/
+.paycard .titleline {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+/*動畫派對：主持人實況的嵌入視窗、派對連結*/
+.embedding-video,
+.embedding-video .tool-bar {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+input.party-link {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+/*影片頁：彈幕設定的關鍵字清單、彈幕黑名單提示、彈幕列表最下面的分隔線*/
+.ani-keyword-body,
+#danmublackmsg {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+.sub_list .danmu-desc-bottom-line {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+/*首頁「週期表」每天的欄位*/
+.programlist-block .day-list {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.programlist-block .day-list.today-list {
+    border: 1px solid #87dfff !important;
+}
+.programlist-block .text-anime-info {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+.programlist-block .text-anime-info:hover .text-anime-name {
+    color: #87dfff !important;
+}
+/*圖片載入前的淺灰色底*/
+.theme-img-bg.loading {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+/*付費方案、序號兌換、年齡驗證、動畫派對入口、服務條款：選單下方的標題列*/
+.universal-bigtitle {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.universal-bigtitle .cart_header {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+/*同上，各頁面的白色卡片*/
+.usercard,
+.paycard,
+.redeem-card,
+.age-cer-area,
+.party-entrance-desc-block,
+.party-kv-block,
+section > .service {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.paycard.is-btn:hover {
+    border: 1px solid #87dfff !important;
+}
+.cer-info-img {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.list-grow .invoice {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.redeem-card input,
+.search_result input {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+/*首頁最上面的公告（原本是白底）*/
+.index_new .gossip {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+}
+.index_new .gossip a {
+    color: #87dfff !important;
+}
+
+/*===== 第三方腳本 =====*/
+/*「動畫瘋·Plus」：彈幕列表旁的分頁*/
+.plus_ani-tabs-link {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.plus_ani-tabs-link.is-active {
+    color: #87dfff !important;
+}
+/*「動畫瘋·Plus」：空降足跡清單、說明視窗、停用中的按鈕*/
+.plus_time_body {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+.plus_dialog-border {
+    background-color: rgba(45, 45, 45, 0.95) !important;
+    border: 2px solid #249db8 !important;
+}
+.plus-bluebtn:disabled {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.plus-input {
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+.plus_no_sub,
+.plus_explain,
+.plus_version {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+/*「動畫瘋截圖工具」：影片下方的截圖列*/
+.ct_div {
+    background-color: rgba(45, 45, 45, 0.4) !important;
+}
+.but_ct {
+    color: #87dfff !important;
+}
+.but_ct:hover {
+    color: #fff !important;
+}
+.ct_item {
+    border-color: rgba(255, 255, 255, 0.4) !important;
+}
+/*下載、開啟、刪除的黑色圖示*/
+.ct_download,
+.ct_open,
+.ct_delete {
+    filter: invert(1);
+}
 `,
   }
 
@@ -4423,6 +5126,22 @@ section.data,
     return style
   }
   const style = addCss()
+
+  /**
+   * 請 Dark Reader 不要處理這個頁面（Dark Reader 看到 <meta name="darkreader-lock"> 就會自己停用），
+   * 否則兩邊同時調整顏色會互相干擾，例如背景圖片消失。
+   */
+  function lockDarkReader() {
+    if (!document.head) {
+      setTimeout(lockDarkReader, 10)
+      return
+    }
+    if (document.querySelector('meta[name="darkreader-lock"]')) return
+    const meta = document.createElement('meta')
+    meta.name = 'darkreader-lock'
+    document.head.appendChild(meta)
+  }
+  lockDarkReader()
 
   if (isPreviewFrame) {
     const update = () => {
