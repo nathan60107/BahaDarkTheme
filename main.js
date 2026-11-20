@@ -2978,6 +2978,34 @@ ul.socialShareMenu > li:hover {
 .tippy-content > .tag-list a.tag-user:not(.active):hover {
     background-color: rgba(0, 0, 0, 0.6) !important;
 }
+/*滑鼠移到勇者頭像、帳號時跳出的個人資訊卡（gamercard）*/
+.usercard .usercard__data .usercard-label-name,
+.usercard .usercard__data ul.usercard-info li p {
+    color: #fff !important;
+}
+.usercard .usercard__data a.usercard-label-id {
+    color: #87dfff !important;
+}
+.usercard .usercard__data ul.usercard-info li label {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+.usercard .usercard__option {
+    border-top-color: rgba(255, 255, 255, 0.2) !important;
+}
+.usercard .usercard__option a {
+    border-right-color: rgba(255, 255, 255, 0.2) !important;
+}
+.usercard .usercard__option a i,
+.usercard .usercard__option a span {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.usercard .usercard__option a:hover {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+.usercard .usercard__option a:hover i,
+.usercard .usercard__option a:hover span {
+    color: #87dfff !important;
+}
 /* 2026-11 補強：第一次留言時跳出的「留言標記功能」等導覽提示框（shepherd） */
 .shepherd-element.shepherd-theme-arrows .shepherd-content {
     background: #2d2d2d !important;
