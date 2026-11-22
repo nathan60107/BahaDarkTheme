@@ -2772,6 +2772,11 @@ body {
    * 2026-11 補強：所有頁面共用（彈出視窗、發文編輯器）
    */
   const CSS_COMMON = `
+/*所有捲動條統一改成深色（Chrome 預設是白色；設定 scrollbar-color 後網站用 ::-webkit-scrollbar 自訂的樣式也會被取代）*/
+* {
+    scrollbar-color: rgba(255, 255, 255, 0.35) rgba(0, 0, 0, 0.3) !important;
+}
+
 /*彈出視窗（發表創作、發文預覽…）*/
 dialog.dialogify {
     background-color: rgba(45, 45, 45, 0.95) !important;
@@ -4790,6 +4795,15 @@ textarea::placeholder {
 }
 .mainmenu a:hover {
     color: #87dfff !important;
+}
+/*選單目前頁面下方的藍色底線，外框是文字顏色（已改成白色），在深色選單上會變成白框*/
+.mainmenu li::after {
+    outline-color: transparent !important;
+}
+/*影片下方的彈幕輸入框：原本是淺藍色半透明底配白字，畫面亮的時候看不清楚*/
+.danmutext_area {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3) !important;
 }
 
 /*右上角的使用者選單*/
