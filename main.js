@@ -5176,6 +5176,14 @@ section > .service {
       else setTimeout(inject, 10)
     }
     inject()
+    // 原腳本很多規則沒有 !important，要排在網站的 CSS 後面才蓋得過去。document-start 時 <head> 可能還沒建立
+    //（Firefox 在背景分頁載入時特別容易發生），<style> 會跑到網站的 CSS 前面，所以頁面結構建好後移到 <html> 最後面
+    const moveToEnd = () => {
+      const root = document.documentElement
+      if (root && root.lastElementChild !== style) root.appendChild(style)
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', moveToEnd)
+    else moveToEnd()
     return style
   }
   const style = addCss()
