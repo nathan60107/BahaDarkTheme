@@ -2786,6 +2786,10 @@ dialog.dialogify {
 .dialogify_title {
     color: #87dfff !important;
 }
+/*Dialogify.alert 的訊息文字（發生錯誤、廣告載入中…）原本是深灰色。用 :where 降低權重，個別指定的顏色才蓋得過去*/
+dialog.dialogify .dialogify__body :where(p) {
+    color: #fff !important;
+}
 .dialogify__close img {
     filter: invert(1);
 }
@@ -3072,6 +3076,30 @@ ul.socialShareMenu > li:hover {
     )
     .shepherd-content::before {
     border-right-color: #2d2d2d !important;
+}
+/* 2026-11 補強：每日簽到視窗（保留右下角的吉祥物背景圖） */
+.popup-dailybox .dialogify__content {
+    background-color: rgb(45, 45, 45) !important;
+}
+.popup-dailybox .popup-dailybox__title {
+    color: #ffb36b !important;
+}
+.popup-dailybox :is(.popup-dailybox__subtitle p, .dailybox-day, .dailybox-day p, .popup-dailybox__fulilink) {
+    color: #fff !important;
+}
+.popup-dailybox .dailybox-day:not(.dailybox-day--header) {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+}
+.popup-dailybox .dailybox-day--header {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+/*已簽到的格子上面蓋的白色半透明遮罩與打勾*/
+.popup-dailybox .dailybox-day.is-active::after {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    border-color: #f39c12 !important;
+}
+.popup-dailybox a:not(.dialogify__close) {
+    color: #87dfff !important;
 }
 /* 2026-11 補強：NOW! 聊天室頭像的白底 */
 .msg_container .user-headshot {
@@ -4627,6 +4655,28 @@ a.BH-talkman {
 .pbox-btn .btn-base.is-disable {
     background-color: rgba(255, 255, 255, 0.15) !important;
     color: rgba(255, 255, 255, 0.5) !important;
+}
+`,
+    // 會員中心（補簽申請…）
+    user: `
+/*補簽申請等置中卡片的頁面：灰底、藍綠色頁首、白色卡片*/
+.wrapper {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.header {
+    background-image: none !important;
+    background-color: rgba(45, 45, 45, 0.9) !important;
+}
+.wrapper .card {
+    background-color: rgba(45, 45, 45, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.4) !important;
+    color: #fff !important;
+}
+.wrapper .card p {
+    color: #ff8a80 !important;
+}
+.wrapper .card hr.line {
+    border-color: rgba(255, 255, 255, 0.2) !important;
 }
 `,
     // 站內信
